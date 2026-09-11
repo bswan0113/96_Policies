@@ -35,7 +35,9 @@ assets/style.css           공통 스타일
 
 ## 목록
 
+공개 URL: <https://bswan0113.github.io/96_Policies/>
+
 | 제품 | 정책 | 상태 |
 |---|---|---|
-| 튜터 스케줄러 보조 (크롬 확장) | `privacy/tutor-scheduler-ext.html` | 작성 예정 |
+| 튜터 스케줄러 보조 (크롬 확장) | [`privacy/tutor-scheduler-ext.html`](https://bswan0113.github.io/96_Policies/privacy/tutor-scheduler-ext.html) | 게시됨 — 2026-09-11 |
 | 잉크웰 Inkwell (안드로이드 앱) | `privacy/inkwell.html` | 이관 예정 — AdMob 수집 항목 포함 |
