@@ -1,0 +1,131 @@
+/* 96_Policies — 개인정보처리방침 공통 스타일 */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --line: #d8dee4;
+  --accent: #0969da;
+  --code-bg: #f2f4f6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171a;
+    --fg: #e6edf3;
+    --muted: #9aa7b2;
+    --line: #2b3138;
+    --accent: #6cb6ff;
+    --code-bg: #1e2328;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo",
+    "Malgun Gothic", "Noto Sans KR", Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.wrap {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+}
+
+header.doc {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin: 0 0 .5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 2.5rem 0 .75rem;
+  padding-top: .25rem;
+}
+
+p { margin: 0 0 1rem; }
+
+ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+
+.meta {
+  color: var(--muted);
+  font-size: .9rem;
+  margin: 0;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+code {
+  background: var(--code-bg);
+  padding: .12em .38em;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .88em;
+}
+
+/* 정책 목록 (index) */
+.policy-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+}
+
+.policy-list li {
+  border-top: 1px solid var(--line);
+  padding: 1rem 0;
+  margin: 0;
+}
+
+.policy-list li:last-child { border-bottom: 1px solid var(--line); }
+
+.policy-list .name {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.policy-list .note {
+  display: block;
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+.pending .name { color: var(--muted); font-weight: 600; }
+
+footer.doc {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: .9rem;
+}
+
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .wrap { padding: 1.75rem 1.1rem 3rem; }
+  h1 { font-size: 1.45rem; }
+}
